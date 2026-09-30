@@ -22,9 +22,11 @@ jobs:
           java-version: "17"
 
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
+        with:
+          packages: "platform-tools"
 
-      - name: Install Android SDK components
+      - name: Install Android SDK packages
         run: |
           sdkmanager "platforms;android-35" "build-tools;35.0.0"
           yes | sdkmanager --licenses || true
@@ -36,8 +38,7 @@ jobs:
 
       - name: Extract Android project
         run: |
-          rm -rf project
-          mkdir project
+          mkdir -p project
           unzip -q AnkushAIStudio_V1_CloudBuild.zip -d project
 
       - name: Build Debug APK
@@ -50,4 +51,3 @@ jobs:
         with:
           name: AnkushAIStudio-debug-apk
           path: project/app/build/outputs/apk/debug/app-debug.apk
-          if-no-files-found: error
