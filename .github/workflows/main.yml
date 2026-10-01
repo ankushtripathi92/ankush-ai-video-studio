@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "AnkushAIStudio_V5_PREMIUM.zip"
+      "AnkushAIStudio_V5_PREMIUM_FIXED.zip"
       - ".github/workflows/main.yml"
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir -p project
-          unzip -q AnkushAIStudio_V5_PREMIUM.zip -d project
+          unzip -q AnkushAIStudio_V5_PREMIUM_FIXED.zip -d project
 
       - name: Build Debug APK
         working-directory: project
