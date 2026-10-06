@@ -39,7 +39,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir -p project
-          unzip -q AnkushAIStudio_V8_REAL_NEWS_PRESENTER.zip -d project
+          unzip -q AnkushAIStudio_V9_NAVIGATION_FIXED.zip -d project
 
       - name: Build Debug APK
         working-directory: project
