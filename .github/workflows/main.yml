@@ -39,7 +39,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir -p project
-          AnkushAIStudio_V10_NEW_PROJECT_FLOW_FIXED.zip
+                unzip -q AnkushAIStudio_V10_NEW_PROJECT_FLOW_FIXED.zip -d project
 
       - name: Build Debug APK
         working-directory: project
