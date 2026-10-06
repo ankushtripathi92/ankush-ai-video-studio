@@ -4,7 +4,7 @@ name: Build Ankush AI Video Studio APK
   workflow_dispatch:
   push:
     paths:
-      - "AnkushAIStudio_V7_FINAL.zip"
+      - "AnkushAIStudio_V8_REAL_NEWS_PRESENTER.zip"
       - ".github/workflows/main.yml"
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir -p project
-          unzip -q AnkushAIStudio_V7_FINAL.zip -d project
+          unzip -q AnkushAIStudio_V8_REAL_NEWS_PRESENTER.zip -d project
 
       - name: Build Debug APK
         working-directory: project
