@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      AnkushAIStudio_V7_FINAL.zip
-      - ".github/workflows/main.yml"
+  - "AnkushAIStudio_V7_FINAL.zip"
+  - ".github/workflows/main.yml"
 
 jobs:
   build-apk:
