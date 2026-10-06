@@ -4,7 +4,7 @@ name: Build Ankush AI Video Studio APK
   workflow_dispatch:
   push:
     paths:
-      - "AnkushAIStudio_V8_REAL_NEWS_PRESENTER.zip"
+      - "AnkushAIStudio_V9_NAVIGATION_FIXED.zip"
       - ".github/workflows/main.yml"
 
 jobs:
