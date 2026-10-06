@@ -39,7 +39,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir -p project
-                AnkushAIStudio_V12_REAL_PRESENTER_GENERATION_FINAL.zip
+                unzip -q AnkushAIStudio_V12_REAL_PRESENTER_GENERATION_FINAL.zip -d project
 
       - name: Build Debug APK
         working-directory: project
