@@ -4,7 +4,7 @@ name: Build Ankush AI Video Studio APK
   workflow_dispatch:
   push:
     paths:
-      AnkushAIStudio_V16_REAL_PRESENTER_COMPOSITION_LOCK.zip
+      AnkushAIStudio_V17_REAL_HUMAN_PERFORMANCE_UPDATE_READY.zip
       - ".github/workflows/main.yml"
 
 jobs:
@@ -39,7 +39,7 @@ jobs:
       - name: Extract Android project
         run: |
           mkdir -p project
-                unzip -q AnkushAIStudio_V16_REAL_PRESENTER_COMPOSITION_LOCK.zip -d project
+                unzip -q AnkushAIStudio_V17_REAL_HUMAN_PERFORMANCE_UPDATE_READY.zip -d project
 
       - name: Build Debug APK
         working-directory: project
